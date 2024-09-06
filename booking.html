@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Page</title>
+    <style>
+      nav {
+        background-color: black;
+        font-size: x-large;
+        padding: 10px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+      }
+      h3 {
+        color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+      input {
+        text-align: center;
+      }
+      form {
+        border: 1px solid grey;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>THE HOTEL ELEGANCE INN</h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="login.html">LOGIN</a>
+      <a href="signup.html">SIGNUP</a>
+      <a href="booking.html">BOOK</a>
+      <a href="roomType.html">ROOMS</a>
+    </nav>
+    <br />
+    <center>
+      <form action="">
+        <h2>Booking form</h2>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />&nbsp;&nbsp;
+
+        <label for="mobile">Mobile No:</label>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter your mobile num"
+          required
+        />&nbsp;&nbsp;
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" name="roomType" required>
+          <option value="" disabled selected>Select room type</option>
+          <option value="2 TWIN BEDS WITH BALCONY">
+            2 TWIN BEDS WITH BALCONY
+          </option>
+          <option value="1 KING BED WITH BALCONY">
+            1 KING BED WITH BALCONY
+          </option>
+          <option value="1 KING BED POOL VIEW WITH BALCONY">
+            1 KING BED POOL VIEW WITH BALCONY
+          </option>
+          <option value="2 TWIN BED POOL VIEW WITH BALCONY">
+            2 TWIN BED POOL VIEW WITH BALCONY
+          </option>
+          <option value="1 KING DELUXE WITH BALCONY">
+            1 KING DELUXE WITH BALCONY
+          </option>
+          <option value="2 TWIN DELUXE WITH BALCONY">
+            2 TWIN DELUXE WITH BALCONY
+          </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br /><br />
+        <label>Meals:</label>
+        <input type="checkbox" id="breakfast" name="meals" value="breakfast" />
+        <label for="breakfast">Breakfast</label>
+        <input type="checkbox" id="lunch" name="meals" value="lunch" />
+        <label for="lunch">Lunch</label>
+        <input type="checkbox" id="dinner" name="meals" value="dinner" />
+        <label for="dinner">Dinner</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="people">Number of People:</label>
+        <select id="people" name="people" required>
+          <option value="" disabled selected>Select number of people</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <br /><br />
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required />
+        <br /><br />
+        <label for="document">Upload Document:</label>
+        <input type="file" id="document" name="document" required />
+        <br /><br />
+        <label for="address">Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          placeholder="Enter your address"
+          rows="2"
+          cols="60"
+          required
+        ></textarea>
+        <br /><br />
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Enter your city"
+          required
+        />&nbsp;&nbsp;
+
+        <label for="state">State:</label>
+        <input
+          type="text"
+          id="state"
+          name="state"
+          placeholder="Enter your state"
+          required
+        />&nbsp;&nbsp;
+
+        <label for="country">Country:</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Enter your country"
+          required
+        />
+        <br /><br />
+
+        <button type="submit">Submit</button><br /><br />
+      </form>
+    </center>
+    <h2>Room Amenities</h2>
+    <ul>
+      <li>Wi-Fi</li>
+      <li>Room Service</li>
+      <li>Air Conditioning</li>
+      <li>Telephone</li>
+      <li>TV</li>
+      <li>In-room Dining</li>
+      <li>Iron/Ironing Board</li>
+    </ul>
+  </body>
+</html>
